@@ -1,1 +1,2 @@
 Checking the file with projects1 folder
+1.This Line Added From User2,Modified from User2
