@@ -1,0 +1,125 @@
+sdetmindc127@MindSDET873 MINGW64 ~
+$ mkdir mseproject
+
+sdetmindc127@MindSDET873 MINGW64 ~
+$ cd mseproject
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject
+$ git clone https://github.com/Ashraf-mindtree
+Cloning into 'Ashraf-mindtree'...
+remote: Not Found
+fatal: repository 'https://github.com/Ashraf-mindtree/' not found
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject
+$ git clone https://github.com/Ashraf-mindtree/github-demo
+Cloning into 'github-demo'...
+remote: Enumerating objects: 29, done.
+remote: Total 29 (delta 0), reused 0 (delta 0), pack-reused 29
+Receiving objects: 100% (29/29), done.
+Resolving deltas: 100% (8/8), done.
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject
+$ ls
+github-demo/
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject
+$ cd github-demo
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ alias np='start notepad'
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ np gitcode
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ np seleniumscript.java
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitcode.txt
+        seleniumscript.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git add seleniumscript.java
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   seleniumscript.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitcode.txt
+
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git commit-m"Adding java file to repository"
+git: 'commit-mAdding java file to repository' is not a git command. See 'git --help'.
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git commit -m"Adding java file to repository"
+[main ccae142] Adding java file to repository
+ 1 file changed, 98 insertions(+)
+ create mode 100644 seleniumscript.java
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitcode.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git pull origin main
+From https://github.com/Ashraf-mindtree/github-demo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.32 KiB | 1.32 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ashraf-mindtree/github-demo
+   02336f3..ccae142  main -> main
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitcode.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sdetmindc127@MindSDET873 MINGW64 ~/mseproject/github-demo (main)
+$
